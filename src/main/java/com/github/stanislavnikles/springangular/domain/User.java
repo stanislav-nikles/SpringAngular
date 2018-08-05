@@ -17,11 +17,14 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "full_name_id")
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "full_name")
     FullName name;
 
-    @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "address_id")
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address")
     Address address;
+
+    @Column(name = "photo")
+    String photo;
 }

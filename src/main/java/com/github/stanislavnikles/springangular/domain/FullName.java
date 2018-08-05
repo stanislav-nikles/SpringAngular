@@ -21,7 +21,4 @@ public class FullName {
 
     @Column(name = "last_name")
     String lastName;
-
-    @OneToOne(mappedBy = "name")
-    User user;
 }

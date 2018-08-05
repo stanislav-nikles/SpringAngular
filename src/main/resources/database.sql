@@ -18,3 +18,7 @@ CREATE TABLE users (
   full_name BIGINT REFERENCES full_name(id),
   address   BIGINT REFERENCES address(id)
 );
+
+ALTER TABLE users ADD COLUMN photo VARCHAR NOT NULL;
+
+

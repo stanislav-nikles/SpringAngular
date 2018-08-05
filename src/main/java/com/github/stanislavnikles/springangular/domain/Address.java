@@ -21,7 +21,4 @@ public class Address {
 
     @Column(name = "street")
     String street;
-
-    @OneToOne(mappedBy = "address", cascade = CascadeType.ALL)
-    User user;
 }
