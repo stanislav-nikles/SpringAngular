@@ -1,5 +1,6 @@
 package com.github.stanislavnikles.springangular.domain;
 
+import com.fasterxml.jackson.annotation.JsonRootName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
